@@ -23,40 +23,39 @@ O programa deve mostrar o resultado da operação.
         <button type="submit">Fazer conta</button>
     </form>
 
-<style>
-
-</style>
 </body>
 </html>
 
 <?php
 
-    $conta = $_POST["conta"];
+    $conta = $_POST["conta"] ?? null;
     $res = null;
 
-    if (str_contains($conta, '+')) {
-        $temp = explode("+", $conta);
-        $res = $temp[0] + $temp[1];
-    }
-    elseif (str_contains($conta, '-')){
-        $temp = explode("-", $conta);
-        $res = $temp[0] - $temp[1];
-    }
-    elseif (str_contains($conta, '*')){
-        $temp = explode("*", $conta);
-        $res = $temp[0] * $temp[1];
+    if($conta != null){
+        if (str_contains($conta, '+')) {
+            $temp = explode("+", $conta);
+            $res = $temp[0] + $temp[1];
+        }
+        elseif (str_contains($conta, '-')){
+            $temp = explode("-", $conta);
+            $res = $temp[0] - $temp[1];
+        }
+        elseif (str_contains($conta, '*')){
+            $temp = explode("*", $conta);
+            $res = $temp[0] * $temp[1];
 
-    }
-    elseif (str_contains($conta, '/')){
-        $temp = explode("/", $conta);
-        $res = $temp[0] / $temp[1];
-    }
+        }
+        elseif (str_contains($conta, '/')){
+            $temp = explode("/", $conta);
+            $res = $temp[0] / $temp[1];
+        }
 
-    if ($res != null){
-        echo "O resultado é igual a $res";
-    }
-    else{
-        echo "não foi colocado uma conta de acordo com as especificações";
+        if ($res != null){
+            echo "O resultado é igual a $res";
+        }
+        else{
+            echo "não foi colocado uma conta de acordo com as especificações";
+        }
     }
 
 ?>

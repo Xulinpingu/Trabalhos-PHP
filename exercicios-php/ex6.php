@@ -34,7 +34,7 @@ Resultado:
 
 <?php
 
-    $n = $_POST["n"];
+    $n = $_POST["n"] ?? null;
 
     $fib = 0;
     $fib1 = 0;

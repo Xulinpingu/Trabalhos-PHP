@@ -22,9 +22,6 @@ Crie uma função soma(n) que receba um número inteiro e retorne a soma de 0 at
         <button type="submit">Somar 0 até N</button>
     </form>
 
-<style>
-
-</style>
 </body>
 </html>
 
@@ -39,8 +36,8 @@ Crie uma função soma(n) que receba um número inteiro e retorne a soma de 0 at
     }
 
 
-    $n = $_POST["n"];
+    $n = $_POST["n"] ?? null;
     $soma = Soma($n);
 
-    echo "$soma";
+    if($n != null){echo "$soma";}
 ?>

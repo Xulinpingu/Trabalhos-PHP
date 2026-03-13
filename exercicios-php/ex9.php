@@ -28,7 +28,7 @@ Que receba uma lista de números reais e retorne a média aritmética.
 
     <?php
 
-        $n_media = $_POST["n_media"];
+        $n_media = $_POST["n_media"] ?? null;
         echo "<form action='ex9.php' class='form' method='POST'>";
         for ($i = 1; $i <= $n_media; $i++){
             echo "<br>";
@@ -43,9 +43,6 @@ Que receba uma lista de números reais e retorne a média aritmética.
         echo "</form>";
 
     ?>
-<style>
-
-</style>
 </body>
 </html>
 

@@ -29,15 +29,13 @@ Leia um número n e imprima n linhas no seguinte formato (exemplo para n = 6):
         <button type="submit">Fazer Triângulo</button>
     </form>
 
-<style>
 
-</style>
 </body>
 </html>
 
 <?php
 
-    $n = $_POST["n"];
+    $n = $_POST["n"] ?? null;
 
     for($i = 0; $i <= $n; $i++){
         echo "<p>\n</p>";

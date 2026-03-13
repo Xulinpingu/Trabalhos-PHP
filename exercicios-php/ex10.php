@@ -29,21 +29,21 @@ ou
         <button type="submit">Verificar se o ano é bissexto</button>
     </form>
 
-<style>
 
-</style>
 </body>
 </html>
 
 <?php
 
-    $ano = $_POST["ano"];
+    $ano = $_POST["ano"] ?? null;
 
-    if($ano % 400 == 0 or $ano % 4 == 0 and $ano % 100 != 0){
-        echo "O ano $ano, é Bissexto";
-    }
-    else{
-        echo "O ano $ano, não é Bissexto";
+    if($ano != null){
+        if($ano % 400 == 0 or $ano % 4 == 0 and $ano % 100 != 0){
+            echo "O ano $ano, é Bissexto";
+        }
+        else{
+            echo "O ano $ano, não é Bissexto";
+        }
     }
 
 ?>
