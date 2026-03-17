@@ -6,16 +6,14 @@
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
+    min-height: 100vh;
 }
 
-/* Botão cadastro */
+/* Botao do cadastro */
 .btnDiv {
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px 0 40px;
 }
 
 .btn {
@@ -35,33 +33,7 @@ body {
 }
 
 
-.listDiv {
-    background-color: white;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-.listDiv ul {
-    list-style: none;
-}
-
-.listDiv li {
-    margin: 10px 0;
-}
-
-.listDiv a {
-    text-decoration: none;
-    color: #1c57a5;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.listDiv a:hover {
-    color: #2f086d;
-    padding-left: 5px;
-}
-
+/* Formulario do cadastro */
 .form {
     background-color: white;
     padding: 30px;
@@ -107,4 +79,58 @@ body {
 
 .form button:hover {
     background-color: #2e59d9;
+}
+
+/* exercicios */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.ex {
+    background-color: white;
+    width: 700px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ex a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4e73df;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.ex a:hover {
+    color: #531388;
+}
+
+.text {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+
+.ex:hover {
+    transform: translateY(-8px);
+}
+
+.ex:hover .text {
+    opacity: 1;
+    max-height: 500px;
+    margin-top: 10px;
 }

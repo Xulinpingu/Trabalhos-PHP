@@ -92,6 +92,6 @@
                 window.location.href = "index.html";
             }, 500);
         }
-    }, 2000);
+    }, 1000);
 </script>
 </html>
