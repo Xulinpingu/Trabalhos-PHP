@@ -12,6 +12,7 @@ Por isso, as sessions são consideradas mais seguras, pois as informações sens
 Os cookies, por outro lado, são mais utilizados para armazenar dados não sensíveis e que precisam persistir por mais tempo, como preferências do usuário (tema do site, idioma, lembrar login, etc.).
 
 ---
+
 # Exercício 2 — Pergunta de aplicação
 ## Imagine que você está desenvolvendo um sistema de loja virtual.
 
@@ -22,4 +23,7 @@ armazenar itens temporários no carrinho
 registrar preferências do usuário.
 Justifique suas escolhas.
 
-*Resposta*: Para manter o login o ideal é utilizar sessions pois é mais seguro e fica guardado no servidor, porém caso queira manter o login mesmo após fechar o navegador é necessário usar cookies pois eles guardam as informações por mais tempo. para armazenar itens temporários no carrinho utilizamos cookies pois ele guardam os itens por um tempo. Para registrar preferências do usuário tem que usar cookies pois guarda por mais tempo.
+*Resposta:* Para manter o login do usuário, o ideal é utilizar sessions, pois os dados ficam armazenados no servidor, tornando o processo mais seguro. Normalmente, apenas um identificador da sessão é salvo no navegador.
+Caso seja necessário manter o login mesmo após fechar o navegador, pode-se utilizar cookies, armazenando um token de autenticação persistente (como a opção “lembrar-me”).
+Para armazenar itens temporários no carrinho de compras, geralmente utilizamos sessions, pois os dados são temporários e não precisam ficar salvos por muito tempo, além de serem mais seguros.
+Já para registrar preferências do usuário, como tema do site ou idioma, utilizamos cookies, pois essas informações não são sensíveis e precisam persistir por mais tempo no navegador.
