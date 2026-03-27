@@ -56,6 +56,7 @@ por que o cookie não aparece imediatamente na primeira execução.
 
 **Resposta:** Na primeira vez que o arquivo é executado, aparece a mensagem “Cookie ainda não disponível”, porque o cookie foi enviado pelo servidor, mas ainda não pode ser acessado nesse mesmo momento. Após atualizar a página, o navegador já terá salvo o cookie e o enviará novamente ao servidor, permitindo que seu valor seja mostrado corretamente. Ao acessar as ferramentas do navegador, é possível ver o cookie criado, com seu nome, valor e tempo de expiração. Se os cookies do site forem apagados e a página for atualizada outra vez, o cookie deixa de existir e a mensagem inicial reaparece. Isso ocorre porque o cookie depende do armazenamento no navegador. Ele não aparece logo na primeira execução porque só fica disponível depois que o servidor responde e o navegador faz uma nova requisição.
 
+---
 
 # Exercício 4 — Pergunta de reflexão
 ## Por que sessions são geralmente preferidas para autenticação de usuários em sistemas web?
