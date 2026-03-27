@@ -35,10 +35,10 @@ O objetivo do aplicativo é mostrar uma mensagem na tela quando o usuário clica
 O objetivo do aplicativo é permitir que o usuário desenhe na tela do celular. Ele funciona com um Canvas onde o usuário pode arrastar o dedo para desenhar linhas. Existem botões com as cores vermelho, verde, azul e amarelo, que mudam a cor do pincel. Em relação ao exemplo da apostila, organizamos melhor os botões na tela.
 
 ### Print do Design  
-![Design Projeto 2](imagens/img-paint.png)
+![Design Projeto 2](imagens/img-color.png)
 
 ### Print dos Blocos  
-![Blocos Projeto 2](imagens/img-block-paint.png)
+![Blocos Projeto 2](imagens/img-block-color.png)
 
 ## Projeto 3 – Liquidificador (pg. 56)
 
