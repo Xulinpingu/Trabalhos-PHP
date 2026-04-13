@@ -8,7 +8,7 @@ Desenvolvimento de Sistemas
 2°C¹
 
 ## Autores
-Bruno Lourenço de Lima
+Bruno Lourenço de Lima;
 Isaac Faleiros Quevedo
 
 ---
@@ -21,8 +21,6 @@ Petróleo Clcker Simulator
 ---
 
 ## Descrição
-
-Descrever:
 
 - Objetivo do aplicativo: 
     Divertir o usuário de forma simples e intuitiva, passar o tempo e por meio de perguntas implementadas, informar sobre a guerra e atiçar a curiosidade sobre esse assunto.
@@ -48,6 +46,7 @@ Descrever:
 
 ## Upgrades
 ![Upgrades-Design](Imagens/Upgrades-Design.png)
+<br>
 **obs: os botões estão em branco porque seu preço e respectivos upgrades variam de acordo com o número de vezes comprado, então seu texto é colocado por meio do código**
 
 ## Pergunta 1
